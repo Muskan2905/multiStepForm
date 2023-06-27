@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  padding:50px;
+  overflow: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*-------------------CSS Flexbox --- step-one container-----------------*/
+
+.step-one{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.step-one > * {
+  width:100%;
+  padding:1rem;
+  margin-left:90px;
+  margin-right:-130px;
+}
+
+@media (min-width:768px){
+  .step-one > * {
+    width:50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .step-one{
+    margin-right:120px;
+    margin-left:-120px;
+  }
+  .span{
+    margin-top:30px;
+  }
+  .container{
+    font-size:16px;
+  }
+  .edu{
+    margin-left:-140px;
+  }
+  .education-info{
+    margin-left:40px;
+    margin-top:30px;
+  }
+  .box .identity-info, .box .marksheet-info, .box .coverletter-info{
+    margin-left:-80px;
+    margin-bottom:20px;
+  }
+  .doc{
+    margin-left:-50px;
+  }
+  
+  .step-four div{
+    margin-left:-20px;
+  }
+  .courseLabel{
+    margin-left:-60px;
+    width:100%;
+  }
+  .stepper{
+    margin-left:-80px;
+    font-size:14px;
+    color:black;
+  }
+}
+
+
+
+/*------------------------------student-info----------------------*/
+
+.info:after{
+  content:"";
+  display:table;
+  clear:both;
+  margin-bottom:30px;
+}
+
+.info-part{
+  float:left;
+  width:30%;
+
+}
+
+@media screen and (max-width: 600px) {
+  .info-part {
+    width: 100%;
+  }
+}
+
+.span{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom:5px;
+}
+.span-one{
+ 
+ width:130%;
+ max-width:200px;
+
+}
+.span-two{
+  margin-left:50px;
+  width:130%;
+  max-width:200px;
+}
+
+.dob{
+  margin-bottom:15px;
+  margin-top:15px;
+}
+.birth{
+  width:100%;
+  height:30px;
+}
+.drop{
+  width:100%;
+  width:175px;
+  margin-bottom:10px;
+  height:45px;
+  margin-top:10px;
+}
+.step-two .drop, .step-three .drop{
+  width:225px;
+}
+.box{
+  margin-left:120px;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+.education-info > *{
+  margin-left:-160px;
+  margin-top:-10px;
+  margin-bottom:10px;
+}
+
+.step-three > *{
+  margin-left:120px;
+  margin-top:20px;
+}
+
+.step-four > *{ 
+  margin-left:130px;
+}
